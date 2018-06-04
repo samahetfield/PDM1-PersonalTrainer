@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.sergi.app1personaltrainer.RutUser$PlaceholderFragment">
+
+    <ImageView
+        android:id="@+id/image_ej"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Descripción del ejercicio"/>
+
+        <TextView
+            android:id="@+id/descripcion"
+            android:textSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="#5555"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TableRow>
+                <TextView
+                    android:text="Repeticiones"
+                    android:layout_marginRight="24dp"/>
+                <TextView
+                    android:text="Series"
+                    android:layout_marginRight="24dp"/>
+
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:id="@+id/num_repeticiones"
+                    android:text=""
+                    android:textSize="24dp"/>
+                <TextView
+                    android:id="@+id/num_series"
+                    android:text=""
+                    android:textSize="24dp"/>
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

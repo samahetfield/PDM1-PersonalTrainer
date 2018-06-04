@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.sergi.app1personaltrainer">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_app"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/logo_app"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Usuario"
+            android:label="@string/title_activity_usuario"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AddEjercicios" />
+        <activity android:name=".FormularioAlta1" />
+        <activity android:name=".FormularioAlta2" />
+        <activity
+            android:name=".RutUser"
+            android:label="@string/title_activity_rut_user"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".RegistroEntrenador"></activity>
+    </application>
+
+</manifest>
